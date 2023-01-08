@@ -1,0 +1,57 @@
+#header {
+  padding: 20px 0;
+  border-bottom: 1px solid coral;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 36px;
+  font-weight: 600;
+  color: rgb(68, 67, 67);
+}
+.current__data {
+  font-size: 24px;
+  color: cornflowerblue;
+  font-weight: 300;
+  
+}
+.nav {
+  display: flex;
+}
+
+.userPassword {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(68, 67, 67);
+  padding: 5px 15px;
+  border-left: 1px solid rgba(68, 67, 67, 0.3);
+  border-top: 1px solid rgba(68, 67, 67, 0.3);
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid rgba(68, 67, 67, 0.3);
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  /* display: none; */
+}
+.login-btn {
+  display: block;
+  border: 1px solid coral;
+  background-color: coral;
+  border-radius: 0 10px 10px 0;
+  width: 80px;
+  height: 28px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color, 0.2s;
+}
+.login-btn:hover {
+  background-color: transparent;
+  color: coral;
+  border-left: 1px solid coral;
+  border-top: 1px solid coral;
+  border-right: 1px solid coral;
+  border-bottom: 1px solid coral;
+}

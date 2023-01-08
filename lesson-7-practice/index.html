@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+      <div class="wrap">
+        <div class="logo">Gas Station</div>
+        <div class="current__data">07.08.2022</div>
+        <nav class="nav">
+          <input type="password" class="userPassword" placeholder="Enter your password">
+          <button class="login-btn">Log in</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class='main'>
+    <div class='container'>
+      <h1 class="main-title">Расчет стоимости топлива:</h1>
+      <div class="main-wrap">
+
+        <div class="gas-card">
+          <div class="gas-card__item">
+            <label for="92">АИ-92</label>
+            <input class="gas-card__input" type="number" name="" data-id="92" data-gas="92" placeholder="литры">
+            <i class="fa-solid fa-check card-btn" data-result="92"></i>
+          </div>
+          <div class="gas-card__item">
+            <label for="95">АИ-95</label>
+            <input class="gas-card__input" type="number" name="" data-id="95" data-gas="95" placeholder="литры">
+            <i class="fa-solid fa-check card-btn" data-result="95"></i>
+          </div>
+          <div class="gas-card__item">
+            <label for="98">АИ-98</label>
+            <input class="gas-card__input" type="number" name="" data-id="98" data-gas="98" placeholder="литры">
+            <i class="fa-solid fa-check card-btn" data-result="98"></i>
+          </div>
+          <div class="gas-card__item">
+            <label for="dt">ДТ</label>
+            <input class="gas-card__input dt" type="number" name="" data-id="dt" data-gas="dt" placeholder="литры">
+            <i class="fa-solid fa-check card-btn" data-result="dt"></i>
+          </div>
+        </div>
+
+
+        <div class="admin active">
+          <div class="admin-item">
+            <label for="92">92</label>
+            <input class="adminItemInput" type="number" id="92" data-admin="92" placeholder="0">
+            <button class="adminBtn" data-btn="92">Установить 92</button>
+          </div>
+          <div class="admin-item">
+            <label for="95">95</label>
+            <input class="adminItemInput" type="number" id="95" data-admin="95" placeholder="0">
+            <button class="adminBtn" data-btn="95">Установить 95</button>
+          </div>
+          <div class="admin-item">
+            <label for="98">98</label>
+            <input class="adminItemInput" type="number" id="98" data-admin="98" placeholder="0">
+            <button class="adminBtn" data-btn="98">Установить 98</button>
+          </div>
+          <div class="admin-item">
+            <label for="dt">ДТ</label>
+            <input class="adminItemInput" type="number" id="dt" data-admin="dt" placeholder="0">
+            <button class="adminBtn" data-btn="dt">Установить ДТ</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cost-wrap">
+        <span class="cost-name"></span>
+        <div class="cost-out">0</div>
+        <span class="val">руб.</span>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
