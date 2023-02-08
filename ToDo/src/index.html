@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./sass/index.scss">
+  <title>ToDo</title>
+</head>
+<body>
+ <header class="header">
+  <div class="container">
+    <div class="header-wrap">
+      <div class="logo">
+        <p>ToDo</p>
+      </div>
+      <h1 class="header-title">What Can I Do Tuday</h1>
+      <div class="current-data">11.01.2023</div>
+    </div>
+  </div>
+ </header>
+ <section class="main">
+  <div class="container">
+    <div class="main-wrap">
+      <div class="make">
+        <div class="main-make">
+          <div class="main-make__item">
+            <div class="main-description">
+              <p>
+                Make Todo
+              </p>
+            </div>  
+            <div class="main-action">
+              <button class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="rem-btn">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <div class="main-total">
+                <span class="count">Total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-make"></div>
+      </div>
+      <div class="progress">
+        <div class="main-progress">
+          <div class="main-progress__item">
+            <div class="main-description">
+              <p>
+                In progress
+              </p>
+            </div>
+            <div class="main-progress__action">
+              <button class="rem-btn">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <div class="main-total">
+                <span class="count">Total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-progress"></div>
+      </div>
+      <div class="done">
+        <div class="main-done">
+          <div class="main-done__item">
+            <div class="main-description">
+              <p>
+                Done
+              </p>
+            </div>
+            <div class="main-done__action">
+              <button class="rem-btn">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              <div class="main-total">
+                <span class="count">Total</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-done"></div> 
+      </div>         
+    </div>
+  </div>
+ </section>
+ <section class="popup-make">
+  <div class="popup-container">
+    <div id="popup">
+      <form id="form" class="form" action="/requestFine" autocomplete="off" method="POST">
+        <div class="form-title">
+          <h1 class="popup-title">Заполните все обязательные поля</h1>
+          <button class="btn-cloes">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+        <div class="form-control">
+         <label for="usertitle">Заголовок:</label>
+         <input type="text" placeholder="Введите название для заметки" id="usertitle" /> 
+        </div>
+
+        <div class="form-control">
+          <label for="description">Описание:</label>
+          <textarea placeholder="Введите описание заметки" id="description"></textarea>
+        </div>
+
+        <div class="form-control">
+          <input type="text" placeholder="Автор" id="username" />
+        </div>
+
+        <div class="btn">
+          <button class="create-btn">Создать</button>
+          <button class="cancel-btn">Отмена</button>
+        </div>
+      </form>
+    </div>
+  </div>
+ </section>
+
+  
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>

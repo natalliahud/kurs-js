@@ -1,0 +1,24 @@
+.header {
+  background-color: rgb(216, 214, 214);
+  padding: 10px;
+}
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 40px;
+  font-family: 'Sura';
+  color: rgb(64, 63, 63);
+}
+.header-title {
+  font-size: 50px;
+  font-family: 'Sura';
+  color: rgb(64, 63, 63);
+}
+.current-data {
+  font-size: 40px;
+  font-family: 'Sura';
+  color: rgb(64, 63, 63);
+}
