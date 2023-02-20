@@ -52,16 +52,6 @@
 .count {
   
 }
-.item-make {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 350px;
-  height: 90px;
-  background-color: rgb(216, 214, 214);
-  border-radius: 2px 2px 39px 2px;
-  box-shadow: 0 0 25px 0 rgba(82, 181, 211, 0.5) ;
-}
 .main-progress {
   width: 350px;
   height: 80px;
@@ -86,17 +76,6 @@
       justify-content: space-between;
 		}
 }
-.item-progress {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-  width: 350px;
-  height: 90px;
-  background-color: rgb(216, 214, 214);
-  border-radius: 2px 2px 39px 2px;
-  box-shadow: 0 0 25px 0 rgba(82, 181, 211, 0.5) ;
-}
-
 .main-done {
   width: 350px;
   height: 80px;
@@ -121,7 +100,7 @@
       justify-content: space-between;
 		}
 }
-.item-done {
+.item {
   display: flex;
   flex-direction: column;
   margin-top: 50px;

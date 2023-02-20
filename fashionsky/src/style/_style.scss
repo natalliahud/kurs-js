@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+}
+button,
+span {
+  display: block;
+}
+html {
+  font-family: "Montserrat";
+  color: $grey;
+}
+section {
+  padding: 20px 0;
+}
+.main-title {
+  text-align: center;
+}

@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/natalliahud/kurs-js#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.2",
-    "parcel": "^2.8.2"
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3"
   }
 }

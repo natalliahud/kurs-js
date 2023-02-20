@@ -1,11 +1,11 @@
 #popup {
   display: none;
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 0,7s ease;
 }
 #popup.open {
   display: block;
-  transition: opacity .5s;
+  transition: opacity 0,7s ease-in-out;
   opacity: 1;
 }
 .popup-make {
@@ -15,16 +15,12 @@
   top: 0;
   left: 0;
   background: rgba(118, 123, 228, 0.5);
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
   display: none;
 }
 .popup-make_open {
   display: block;
 }
-//.popup-container {
-  // max-width: 1170px;
-  // margin: auto;
-  // padding: 0 15px;
 .popup-container {
   position: absolute;
   top: 50%;
@@ -66,6 +62,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  position: relative;
 }
 label{
   font-size: 20px;
@@ -85,7 +82,7 @@ input{
   border-color: #777;
 }
 .form-control.success input {
-  border-color: #2ecc71;
+  border-color: #1ae46e;
 }
 .form-control.error input {
   border-color: #e74c3c;
@@ -104,19 +101,35 @@ textarea{
   outline: 0;
   border-color: #777;
 }
+.form-control.success textarea {
+  border-color: #1ae46e;
+}
+.form-control.error textarea {
+  border-color: #e74c3c;
+}
+.form-control small {
+  color:#e74c3c;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  visibility: hidden;
+}
+.form-control.error small {
+  visibility: visible;
+}
 .btn {
   margin-top: 30px;
   display: flex;
   justify-content: end;
 }
-.create-btn {
+#save-btn {
   background-color: aqua;
   border: transparent;
   width: 110px;
   height: 25px;
   border-radius: 7px;
 }
-.cancel-btn {
+#cancel-btn {
   margin-left: 20px;
   background-color: rgb(216, 214, 214);
   border: transparent;

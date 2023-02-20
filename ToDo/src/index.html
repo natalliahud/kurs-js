@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="item-make"></div>
+        <div class="item" id="item-make"></div>
       </div>
       <div class="progress">
         <div class="main-progress">
@@ -63,7 +63,7 @@
             </div>
           </div>
         </div>
-        <div class="item-progress"></div>
+        <div class="item" id="item-progress"></div>
       </div>
       <div class="done">
         <div class="main-done">
@@ -83,7 +83,7 @@
             </div>
           </div>
         </div>
-        <div class="item-done"></div> 
+        <div class="item" id="item-done"></div> 
       </div>         
     </div>
   </div>
@@ -101,20 +101,23 @@
         <div class="form-control">
          <label for="usertitle">Заголовок:</label>
          <input type="text" placeholder="Введите название для заметки" id="usertitle" /> 
+         <small>Error message</small>
         </div>
 
         <div class="form-control">
           <label for="description">Описание:</label>
           <textarea placeholder="Введите описание заметки" id="description"></textarea>
+          <small>Error message</small>
         </div>
 
         <div class="form-control">
           <input type="text" placeholder="Автор" id="username" />
+          <small>Error message</small>
         </div>
 
         <div class="btn">
-          <button class="create-btn">Создать</button>
-          <button class="cancel-btn">Отмена</button>
+          <button id="save-btn">Создать</button>
+          <button id="cancel-btn">Отмена</button>
         </div>
       </form>
     </div>
