@@ -103,13 +103,74 @@
 .item {
   display: flex;
   flex-direction: column;
+  padding: 10px;
   margin-top: 50px;
   width: 350px;
-  height: 90px;
+  min-height: 90px;
   background-color: rgb(216, 214, 214);
   border-radius: 2px 2px 39px 2px;
   box-shadow: 0 0 25px 0 rgba(82, 181, 211, 0.5) ;
 }
-
-
+.task {
+  padding: 10px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+  //width: 350px;
+  min-height: 90px;
+  background-color: rgb(216, 214, 214);
+  border-radius: 2px 2px 39px 2px;
+  box-shadow: 0 0 25px 0 rgba(82, 181, 211, 0.5) ;
+}
+.wrap-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+.logo-item {
+  font-family: 'Sura';
+  color: rgb(64, 63, 63);
+}
+.item-title {
+  margin-top: 15px;
+  font-family: 'Sura';
+  color: rgb(64, 63, 63);
+  font-size: 23px;
+}
+.description-item {
+  color: rgb(64, 63, 63);
+  margin-bottom: 30px;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+.user-name__item {
+  display: flex;
+  justify-content: space-between;
+}
+.item-action {
+  margin-right: 10px;
+}
+.inprogress {
+  background: aqua;
+  border: none;
+  border-radius: 4px;
+  width: 85px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.delete {
+  background: aqua;
+  border: none;
+  border-radius: 4px;
+  width: 55px;
+  height: 20px;
+  cursor: pointer;
+}
+.user {
+  color: rgb(64, 63, 63);
+  font-size: 15px;
+}
 

@@ -22,12 +22,15 @@ const $USER_TITLE = $FORM.elements.usertitle;
 const $DESCRIPTION = $FORM.elements.description;
 const $USER_NAME = $FORM.elements.username;
 const $SAVE_BTN = document.querySelector('#save-btn');
+const $CANCEL_BTN = document.querySelector('#cancel-btn');
 
 $FORM.addEventListener("submit", (event) => {
   event.preventDefault();
 
   checkControl();
+  
 });
+
 
 const $ADD_BTN = document.querySelector('.add-btn');
 const $FORM_POPUP = document.querySelector('#popup');
@@ -35,20 +38,25 @@ const $POPUP_MAKE = document.querySelector('.popup-make');
 const $BTN_CLOES = document.querySelector('.btn-cloes');
 
 $ADD_BTN.addEventListener('click', () => {
-$FORM_POPUP.classList.add('open');
-$POPUP_MAKE.classList.add('popup-make_open');
+addClass($FORM_POPUP, 'open');
+addClass($POPUP_MAKE, 'popup-make_open');
 });
 
 
 $BTN_CLOES.addEventListener('click', () => {
-  $FORM_POPUP.classList.remove('open');
-  $POPUP_MAKE.classList.remove('popup-make_open');
+  removeClass($FORM_POPUP, 'open');
+  removeClass($POPUP_MAKE, 'popup-make_open');
+});
+
+$CANCEL_BTN.addEventListener('click', () => {
+  clearValue([$USER_TITLE, $DESCRIPTION, $USER_NAME]);
 });
 
 function checkControl() {
   let usertitleValue = $USER_TITLE.value.trim();
   let descriptionValue = $DESCRIPTION.value.trim();
   let usernameValue = $USER_NAME.value.trim();
+
 
   let formControls = document.querySelectorAll('.form-control');
   formControls.forEach((el) => {
@@ -94,10 +102,16 @@ function checkControl() {
       descriptionValue,
       usernameValue,
     );
-
+    
     controlKeeper.push(userData);
+
+    console.log(controlKeeper);
     
     clearValue([$USER_TITLE, $DESCRIPTION, $USER_NAME]);
+
+    removeClass($FORM_POPUP, 'open');
+    removeClass($POPUP_MAKE, 'popup-make_open');
+    
 
     let controls = document.querySelectorAll('.form-control');
     for(let el of controls) {
@@ -106,7 +120,7 @@ function checkControl() {
   } else {
     check.splice(0);
   }
-  
+  getItem(controlKeeper);
 }
 
 function setSucceessForm(control){
@@ -120,7 +134,11 @@ function setErrorForm(control, message){
   small.innerText = message;
 }
 
-
+function getItem(controlKeeper) {
+  controlKeeper.forEach((element) => {
+      document.querySelector('.item').innerHTML += render(element);
+  });
+}
 
 }
 init();

@@ -1,5 +1,5 @@
 const regular = {
-    usertitleValid: /[^а-яА-ЯёЁa-zA-Z.]+/g,
+    usertitleValid: /[^а-яА-ЯёЁa-zA-Z .]+/g,
     usernameValid: /[^а-яА-ЯёЁa-zA-Z].+/g,
 }
 
