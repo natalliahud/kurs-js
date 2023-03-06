@@ -15,10 +15,13 @@
   top: 0;
   left: 0;
   background: rgba(118, 123, 228, 0.5);
+  transform: translate(0, -200%);
   transition: 0.7s;
-  display: none;
+  //display: none;
 }
 .popup-make_open {
+  transform: translate(0, 0);
+  //transition: 0.7s;
   display: block;
 }
 .popup-container {

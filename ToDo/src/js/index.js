@@ -40,12 +40,14 @@ const $BTN_CLOES = document.querySelector('.btn-cloes');
 $ADD_BTN.addEventListener('click', () => {
 addClass($FORM_POPUP, 'open');
 addClass($POPUP_MAKE, 'popup-make_open');
+document.querySelector('body').style.overflow = 'hidden';
 });
 
 
 $BTN_CLOES.addEventListener('click', () => {
   removeClass($FORM_POPUP, 'open');
   removeClass($POPUP_MAKE, 'popup-make_open');
+  document.querySelector('body').style.overflow = 'scroll';
 });
 
 $CANCEL_BTN.addEventListener('click', () => {
